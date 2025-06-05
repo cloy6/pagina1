@@ -1,0 +1,116 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header, nav, .contenido > section, .contenido > aside, footer {
+    padding: 20px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fondo con color semitransparente para el texto */
+header h1, section h2, section p, aside h3, aside p, nav ul, footer p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+/* Diseño de dos columnas */
+.contenido {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenido > section, .contenido > aside {
+    flex: 1;
+    min-height: 200px;
+}
+
+/* Estilos para el nav */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-image: url('i2.jpg');
+}
+
+.enlaces-oficiales {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.enlaces-oficiales li {
+    margin: 5px;
+}
+
+.enlaces-oficiales li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgba(76, 175, 80, 0.7);
+    transition: all 0.3s;
+}
+
+.enlaces-oficiales li a:hover {
+    background-color: rgba(76, 175, 80, 0.9);
+    transform: scale(1.05);
+}
+
+/* Estilos para los enlaces destacados */
+.enlace-destacado {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.enlace-destacado:hover {
+    text-decoration: underline;
+    color: #45a049;
+}
+
+.enlace-footer {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-footer:hover {
+    text-decoration: underline;
+}
+
+/* Fondo específico por sección */
+header {
+    background-image: url('i1.jpg');
+    text-align: center;
+}
+
+.contenido > section {
+    background-image: url('i6.jpg');
+}
+
+.contenido > aside {
+    background-image: url('i8.jpg');
+}
+
+footer {
+    background-image: url('i9.jpg');
+    text-align: center;
+}
